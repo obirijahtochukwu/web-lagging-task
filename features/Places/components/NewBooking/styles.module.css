@@ -1,0 +1,62 @@
+.content__Wrap,
+.date__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__Wrap {
+    gap: 2rem;
+    /* border: 1px solid #d3d3d3; */
+    border-radius: 12px;
+    padding: 2rem 2rem 2.5rem;
+    position: sticky;
+    top: 6.5rem;
+    width: 35%;
+    box-shadow: var(--card-box-shadow);
+    background-color: #fff;
+}
+
+.date__wrap {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    gap: 1rem;
+}
+
+.title {
+    font-family: var(--mako-font);
+    text-transform: capitalize;
+}
+
+.calendar {
+    width: 100%;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 6px;
+}
+
+.open__Day {
+    background-color: var(--open-day-highlight);
+    color: #fff;
+}
+
+.disabled__Day {
+    background-color: #e8e8e8;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+    .content__Wrap {
+        padding: 2rem 1rem;
+        position: static;
+        width: 100%;
+    }
+
+    .date__wrap {
+        font-size: 0.75rem;
+    }
+
+    .calendar,
+    .navigation__Label {
+        font-size: 0.7rem;
+    }
+}

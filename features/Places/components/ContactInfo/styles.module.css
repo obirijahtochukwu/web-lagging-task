@@ -1,0 +1,41 @@
+.content__Wrap,
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__Wrap {
+    gap: 1.5rem;
+}
+
+.header {
+    font-family: var(--mako-font);
+    text-transform: capitalize;
+}
+
+.info {
+    gap: 0.75rem;
+}
+
+.info__Item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+    width: max-content;
+}
+
+.info__Item.link:hover,
+.info__Item.link:focus {
+    color: var(--primary-app-color);
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .info__Item {
+        font-size: 0.75rem;
+    }
+}

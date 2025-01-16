@@ -1,0 +1,38 @@
+.wrapper {
+    padding: 4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--app-bg-color);
+}
+
+.content__Wrap {
+    /* border: 1px solid #d3d3d3; */
+    border-radius: 12px;
+    padding: 2rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: var(--card-box-shadow);
+}
+
+.back__Wrap {
+    padding: 1rem 4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .back__Wrap {
+        padding: 1rem;
+    }
+
+    .wrapper {
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .content__Wrap {
+        padding: 2rem 1rem;
+    }
+}

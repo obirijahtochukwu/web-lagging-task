@@ -1,0 +1,16 @@
+.carouselll {
+    background-color: var(--app-bg-color);
+}
+
+.image {
+    object-fit: cover;
+    animation: fadeIn 0.35s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

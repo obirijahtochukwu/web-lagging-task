@@ -1,0 +1,44 @@
+.add__Section,
+.section__Content {
+    display: flex;
+    flex-direction: column;
+}
+
+.add__Section {
+    /* border: 1px solid #d3d3d3; */
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    background-color: #fff;
+    box-shadow: var(--card-box-shadow);
+    transition: border-color 0.25s ease-in-out;
+}
+
+.title,
+.title span,
+.title__Info {
+    font-family: var(--mako-font);
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.section__Content {
+    gap: 2rem;
+}
+
+.title__Info {
+    font-size: 0.65rem;
+}
+
+@media screen and (max-width: 767px) {
+    .add__Section {
+        padding: 1.5rem 1rem;
+    }
+}

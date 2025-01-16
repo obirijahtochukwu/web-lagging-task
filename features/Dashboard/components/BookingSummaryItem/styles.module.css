@@ -1,0 +1,86 @@
+.item__Wrap,
+.date__Wrap,
+.item__Schedule__Time {
+    display: flex;
+    align-items: center;
+}
+
+.item__Wrap {
+    gap: 1.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.vert__Divider {
+    width: 1px;
+    height: 3.5rem;
+    background-color: #d3d3d3;
+}
+
+.date__Wrap {
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+}
+
+.date__Day__Year,
+.date__Day__Txt {
+    font-weight: 500;
+}
+
+.date__Day__Txt {
+    font-size: 0.7rem;
+}
+
+.date__Day__Num {
+    font-family: var(--mako-font);
+    font-size: 2.4rem;
+}
+
+.date__Day__Year {
+    font-size: 0.6rem;
+}
+
+.item__Details__Wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item__Details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item__Schedule__Time {
+    gap: 0.4rem;
+    font-size: 0.875rem;
+}
+
+.user__Info {
+    font-size: 0.875rem;
+    text-transform: capitalize;
+}
+
+.status {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+}
+
+.status.pending {
+    background-color: #ffb84d;
+}
+
+.status.confirmed {
+    background-color: #28a745;
+}
+
+.status.cancelled {
+    background-color: #e3342f;
+}

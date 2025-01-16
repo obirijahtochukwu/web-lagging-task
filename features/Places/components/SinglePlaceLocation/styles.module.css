@@ -1,0 +1,20 @@
+.content__Wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    font-family: var(--mako-font);
+    text-transform: capitalize;
+}
+
+.info {
+    height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        font-size: 1.2rem;
+    }
+}

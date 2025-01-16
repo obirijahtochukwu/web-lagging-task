@@ -1,0 +1,72 @@
+.content__Wrap,
+.reviews,
+.review__Card,
+.new__Review {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__Wrap {
+    gap: 1.5rem;
+}
+
+.reviews {
+    max-height: 25rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+    gap: 2rem;
+}
+
+.header,
+.review__User {
+    font-family: var(--mako-font);
+    text-transform: capitalize;
+}
+
+.review__Card,
+.review__Top__Content {
+    gap: 1rem;
+}
+
+.review__Top__Content,
+.review__User__Wrap {
+    display: flex;
+    align-items: center;
+}
+
+.review__User__Wrap,
+.new__Review {
+    gap: 0.4rem;
+}
+
+.review__User {
+    font-family: var(--mako-font);
+}
+
+.review__Time {
+    font-size: 0.65rem;
+    color: #808080;
+}
+
+.no__Review__Txt {
+    font-size: 0.75rem;
+}
+
+.comment {
+    white-space: pre-line;
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 767px) {
+    .review__User {
+        font-size: 1rem;
+    }
+
+    .review__Time {
+        font-size: 0.6rem;
+    }
+
+    .comment {
+        font-size: 0.75rem;
+    }
+}

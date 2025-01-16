@@ -1,0 +1,24 @@
+.list__Wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.list__Wrap.wrap__Row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.list__Wrap.min__Gap {
+    gap: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .list__Wrap,
+    .list__Wrap.wrap__Row {
+        flex-direction: column;
+    }
+}

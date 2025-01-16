@@ -1,0 +1,18 @@
+
+.subtitle__Header {
+    color: #808080;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    transition-delay: 1s;
+}
+
+.subtitle__Header.display {
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .subtitle__Header {
+        font-size: 0.8rem;
+    }
+}

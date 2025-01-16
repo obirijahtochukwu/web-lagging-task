@@ -1,0 +1,85 @@
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.add__New__Item,
+.place__Image__Wrap {
+    width: calc(calc(100% / 3) - 1rem);
+}
+
+.add__New__Item,
+.place__Image__Wrap,
+.place__Image {
+    height: 20rem;
+    border-radius: 24px;
+}
+
+.add__New__Item {
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.add__New__Item:hover {
+    background-color: #d3d3d3;
+}
+
+.place__Image__Wrap {
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.place__Image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.file__input {
+    display: none;
+}
+
+.place__Remove__Icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.1rem;
+    border-radius: 50%;
+    background-color: #f90000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .add__New__Item,
+    .place__Image__Wrap {
+        width: 100%;
+    }
+
+    .add__New__Item,
+    .place__Image__Wrap,
+    .place__Image {
+        height: 16rem;
+    }
+}

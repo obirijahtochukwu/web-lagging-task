@@ -1,0 +1,21 @@
+.select__Wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.select__Wrap span,
+.select__Wrap select {
+    text-transform: capitalize;
+}
+
+.select__Wrap select {
+    padding: 0.45rem 1rem;
+    background: none;
+    border: 1px solid #d3d3d3;
+    outline: none;
+    border-radius: 12px;
+}

@@ -1,0 +1,13 @@
+.faq__Content__Wrap,
+.faq__Input__Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__Content__Wrap {
+    gap: 2rem;
+}
+
+.faq__Input__Section {
+    gap: 1rem;
+}

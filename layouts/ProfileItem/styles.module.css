@@ -1,0 +1,49 @@
+.profile__Wrap,
+.user__Info {
+    display: flex;
+    align-items: center;
+}
+
+.profile__Wrap {
+    justify-content: space-between;
+    font-size: 0.875rem;
+    position: relative;
+}
+
+.user__Info {
+    gap: 0.75rem;
+    text-transform: capitalize;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    bottom: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0.65rem;
+    list-style: none;
+    border-radius: 6px;
+}
+
+.menu li {
+    padding: 0.45rem 1rem;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 6px;
+}
+
+.menu li:hover {
+    background-color: var(--primary-app-color);
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        top: 100%;
+        right: 0;
+        height: max-content;
+    }
+}

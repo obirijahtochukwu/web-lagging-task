@@ -1,0 +1,11 @@
+.input__Wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.input__Wrap span {
+    text-transform: capitalize;
+}

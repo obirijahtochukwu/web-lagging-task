@@ -1,0 +1,22 @@
+.search__Bar {
+    border: 1px solid #808080;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem 1rem;
+    border-radius: 24px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.search__Bar input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: inherit;
+}
+
+.search__Bar:focus-within {
+    border-color: #000;
+}

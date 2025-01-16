@@ -1,0 +1,42 @@
+.content__Wrap,
+.bookings {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__Wrap {
+    width: 40%;
+    /* border: 1px solid #d3d3d3; */
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    gap: 2rem;
+    background-color: #fff;
+    box-shadow: var(--card-box-shadow);
+}
+
+.title__Wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: var(--mako-font);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    gap: 0.1rem;
+}
+
+.bookings {
+    gap: 1.4rem;
+    height: max-content;
+    max-height: 32.5rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+@media screen and (max-width: 767px) {
+    .content__Wrap {
+        width: 100%;
+    }
+}

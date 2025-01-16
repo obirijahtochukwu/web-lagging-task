@@ -1,0 +1,17 @@
+export const availableLocations: { [key: string]: string } = {
+    'new york': 'new york',
+    'los angeles': 'california',
+    'chicago': 'illinois',
+    'houston': 'texas',
+    'phoenix': 'arizona',
+    'philadelphia': 'pennsylvania',
+    'san antonio': 'texas',
+    'san diego': 'california',
+    'dallas': 'texas',
+    'san jose': 'california',
+    'austin': 'texas',
+    'seattle': 'washington',
+    'portland': 'oregon',
+    'jacksonville': 'florida',
+    'san francisco': 'california',
+}

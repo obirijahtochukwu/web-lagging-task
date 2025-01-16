@@ -1,0 +1,108 @@
+.item__Wrap,
+.items__List {
+    display: flex;
+    flex-direction: column;
+}
+
+.item__Wrap {
+    gap: 0.6rem;
+}
+
+.title {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+.items__List {
+    gap: 1.2rem;
+}
+
+.single__List__Item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mob__Add__Title {
+    display: none;
+}
+
+.cus__Input__Wrap {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+}
+
+.cus__Input__Wrap:focus-within .listing {
+    display: flex;
+}
+
+.listing {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px -5px;
+    padding: 1rem 0.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 10rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+    z-index: 10;
+}
+
+.listing li {
+    list-style: none;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+.list__Result {
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.list__Result:hover {
+    background-color: var(--primary-app-color);
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .single__List__Item {
+        flex-direction: column;
+    }
+
+    .single__List__Item > * {
+        max-width: unset;
+    }
+
+    .del__Icon {
+        display: none;
+    }
+
+    .mob__Add__Title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.6rem;
+        width: max-content;
+        color: #808080;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .items__List {
+        gap: 2rem;
+    }
+
+    .cus__Input__Wrap {
+        width: 100%;
+    }
+}

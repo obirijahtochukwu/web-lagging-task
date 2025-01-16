@@ -1,0 +1,39 @@
+.content__Wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.single__Item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 40%;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 767px) {
+    .single__Item {
+        /* flex-direction: column; */
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .title {
+        flex: 100%;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .content__Wrap {
+        gap: 3rem;
+    }
+}

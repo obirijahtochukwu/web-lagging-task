@@ -1,0 +1,35 @@
+.content__Wrap,
+.header,
+.schedules {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__Wrap {
+    gap: 1.3rem;
+}
+
+.header {
+    gap: 0.3rem;
+    font-size: 0.875rem;
+}
+
+.schedules {
+    gap: 0.75rem;
+}
+
+.row__Detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 0.75rem;
+}
+
+.row__Detail > * {
+    width: calc(50% - 1rem);
+}
+
+.row__Detail.disabled {
+    filter: opacity(0.5);
+    pointer-events: none;
+}

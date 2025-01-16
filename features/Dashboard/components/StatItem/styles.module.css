@@ -1,0 +1,21 @@
+.stat__Item {
+    /* border: 1px solid #d3d3d3; */
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    box-shadow: var(--card-box-shadow);
+}
+
+.title {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+.stat {
+    font-family: var(--mako-font);
+    font-size: 1.8rem;
+}

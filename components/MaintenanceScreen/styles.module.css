@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0 8rem;
+}
+
+.main__Ilus {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .popup,
+    .main__Ilus {
+        width: 95%;
+    }
+
+    .main__Ilus {
+        height: 300px;
+        max-width: 100%;
+    }
+}

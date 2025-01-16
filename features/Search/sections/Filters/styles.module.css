@@ -1,0 +1,33 @@
+.content,
+.filters__Wrap {
+    display: flex;
+    align-items: center;
+}
+
+.filters__Wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: sticky;
+    top: 4.5rem;
+    background-color: #fff;
+    z-index: 98;
+}
+
+.content {
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .filters__Wrap {
+        max-width: 100%;
+        scrollbar-width: none;
+        overflow: visible;
+        flex-wrap: wrap;
+    }
+}

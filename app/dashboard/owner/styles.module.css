@@ -1,0 +1,27 @@
+.page__Wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 4rem 5rem;
+    overflow-y: auto;
+}
+
+.user__Stats {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .page__Wrap {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .user__Stats {
+        flex-direction: column;
+    }
+}

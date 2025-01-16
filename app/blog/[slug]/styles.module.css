@@ -1,0 +1,151 @@
+.wrapper {
+    padding: 2rem 5rem 10rem;
+}
+
+.top__Row,
+.article__Footer,
+.blog__Title__Footer,
+.share__Wrap {
+    display: flex;
+    align-items: center;
+}
+
+.blog__Img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog__Detail__Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog__Title,
+.other__Story__Header {
+    font-family: var(--mako-font);
+}
+
+.blog__Title {
+    font-size: 2.5rem;
+}
+
+.other__Story__Header {
+    font-size: 1.4rem;
+}
+
+.top__Row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog__Title__Footer {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.share__Wrap {
+    gap: 1rem;
+    font-size: 0.875rem;
+}
+
+.content__Detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.other__Stories {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog__Wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.blog__Article {
+    position: relative;
+}
+
+.article__Img {
+    max-width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.mask {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.article__Title {
+    font-family: var(--poppins-font);
+    letter-spacing: 0.05em;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.article__Footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    color: #d3d3d3;
+}
+
+.article__Footer.top {
+    color: #808080;
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .blog__Img {
+        height: 15rem;
+    }
+
+    .blog__Title {
+        font-size: 1.5rem;
+    }
+
+    .article__Footer.top,
+    .share__Wrap {
+        font-size: 0.65rem;
+    }
+
+    .content__Detail {
+        flex-direction: column;
+    }
+
+    .other__Stories {
+        width: 100%;
+    }
+}

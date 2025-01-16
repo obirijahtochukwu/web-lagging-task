@@ -1,0 +1,13 @@
+.nav__Wrap {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 0.5px solid #d3d3d3;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__Wrap {
+        display: flex;
+    }
+}

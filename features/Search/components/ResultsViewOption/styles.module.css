@@ -1,0 +1,30 @@
+.view__Option__Wrap,
+.listing__View {
+    display: flex;
+    align-items: center;
+}
+
+.listing__View {
+    justify-content: space-between;
+}
+
+.view__Option__Wrap {
+    background-color: #f3f3f6;
+    width: max-content;
+    border-radius: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .listing__View {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .view__Option__Wrap:nth-child(1) {
+        margin-right: auto;
+    }
+
+    .view__Option__Wrap:nth-child(2) {
+        margin-left: auto;
+    }
+}

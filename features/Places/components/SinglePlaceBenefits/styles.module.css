@@ -1,0 +1,32 @@
+.content__Wrap,
+.benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__Wrap {
+    gap: 1.5rem;
+}
+
+.header {
+    font-family: var(--mako-font);
+    text-transform: capitalize;
+}
+
+.benefits {
+    gap: 0.5rem;
+    width: 98%;
+    margin-left: auto;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .benefits {
+        font-size: 0.7rem;
+    }
+}

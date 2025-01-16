@@ -1,0 +1,208 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 9990;
+    justify-content: center;
+}
+
+.overlay,
+.header__Row,
+.place__Details,
+.input__Row,
+.document__Link,
+.cutom__Pick__head {
+    display: flex;
+    align-items: center;
+}
+
+.content,
+.selected__place,
+.details__Info,
+.detail__item,
+.options,
+.progress,
+.summary__Item,
+.label__Detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: #fff;
+    width: 35%;
+    max-width: 45%;
+    min-height: 25%;
+    height: max-content;
+    max-height: 75%;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+    scrollbar-width: none;
+}
+
+.header__Row {
+    justify-content: space-between;
+}
+
+.header,
+.place__Title,
+.place__Name,
+.detail__Title,
+.summary,
+.summary__Item__Title {
+    font-family: var(--mako-font);
+    text-transform: capitalize;
+}
+
+.header {
+    font-size: 1.5rem;
+}
+
+.actions {
+    width: max-content;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.selected__place,
+.detail__item,
+.options,
+.document__Link,
+.summary__Item {
+    gap: 0.4rem;
+}
+
+.place__Details {
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.details__Info,
+.input__Row {
+    gap: 1rem;
+}
+
+.detail__Title {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.detail__Info {
+    font-size: 0.75rem;
+    color: #808080;
+}
+
+.listing__Wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.8rem;
+}
+
+.label__Item {
+    font-size: 0.875rem;
+    text-transform: capitalize;
+}
+
+.progress {
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+    width: 100%;
+    height: max-content;
+}
+
+.progress__Wrap {
+    width: 100%;
+    border-radius: 6px;
+    background-color: #d3d3d3;
+    height: 4px;
+}
+
+.progress__Indicator {
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--red-color);
+    transition: all 0.25s ease-in-out;
+}
+
+.current__Page__header {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0.8rem;
+}
+
+.document__Link {
+    color: var(--red-color);
+    font-size: 0.75rem;
+}
+
+.summary {
+    margin-top: 0.4rem;
+}
+
+.summary__Item {
+    width: 100%;
+}
+
+.document__Link,
+.no__Doc,
+.summary__Item__Detail {
+    font-size: 0.75rem;
+}
+
+.open__Day {
+    background-color: var(--open-day-highlight);
+    color: #fff;
+}
+
+.label__Detail {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    gap: 0.3rem;
+}
+
+.custom__Pick__Date {
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d3d3d3;
+    font-size: 0.8rem;
+    display: block;
+    width: 100%;
+}
+
+.cutom__Pick__head {
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cutom__Pick__head select {
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        width: 95%;
+        max-width: unset;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .selected__place,
+    .input__Row {
+        flex-direction: column;
+    }
+    .progress {
+        align-items: flex-start;
+    }
+
+    .progress__Item {
+        font-size: 0.55rem;
+    }
+}

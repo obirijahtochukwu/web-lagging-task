@@ -1,0 +1,83 @@
+.overlay,
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+}
+
+.popup {
+    background-color: #fff;
+    width: 28%;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 0.8rem;
+}
+
+.top__Content {
+    background-color: var(--app-bg-color);
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.master__Img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header {
+    font-family: var(--mako-font);
+    font-size: 1.35rem;
+    text-transform: capitalize;
+    text-align: left;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    padding: 0.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 35dvh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+    color: #808080;
+    text-transform: capitalize;
+}
+
+.bio {
+    white-space: pre-line;
+    color: #000;
+    text-transform: none;
+}
+
+@media screen and (max-width: 767px) {
+    .popup {
+        width: 95%;
+    }
+}

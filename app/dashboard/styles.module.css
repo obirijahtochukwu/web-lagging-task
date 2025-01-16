@@ -1,0 +1,43 @@
+.dash__Layout {
+    display: flex;
+    align-items: flex-start;
+    height: 100dvh;
+    width: 100%;
+}
+
+.dash__Content {
+    height: 100%;
+    width: 100%;
+    background-color: var(--app-bg-color);
+}
+
+.page__Wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 4rem 5rem;
+    overflow-y: auto;
+}
+
+.user__Stats {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .page__Wrap {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .user__Stats {
+        flex-direction: column;
+    }
+
+    .dash__Content {
+        padding-bottom: 6.5rem;
+    }
+}

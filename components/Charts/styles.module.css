@@ -1,0 +1,28 @@
+.content,
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    gap: 2rem;
+    width: 100%;
+    /* border: 1px solid #d3d3d3; */
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: var(--card-box-shadow);
+}
+
+.title {
+    font-family: var(--mako-font);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    gap: 0.1rem;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    color: #808080;
+    font-weight: 500;
+}

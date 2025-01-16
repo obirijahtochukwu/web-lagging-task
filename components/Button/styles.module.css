@@ -1,0 +1,17 @@
+.btn {
+    font-size: 0.875rem;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #000;
+    padding: 0.8rem 1.5rem;
+    border-radius: 24px;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}

@@ -1,0 +1,14 @@
+.content__Wrap {
+    width: 40%;
+    height: 100%;
+}
+
+.content__Wrap.hide {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .content__Wrap:not(.main) {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+.input__Wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.input__Wrap span {
+    text-transform: capitalize;
+}
+
+.input__Wrap input,
+.input__Wrap textarea {
+    outline: none;
+    border: none;
+    border: 1px solid #d3d3d3;
+    transition: 0.2s ease-in-out;
+    font-size: 0.8rem;
+    accent-color: 'var(--primary-app-color)';
+}
+
+.input__Wrap input:focus-within,
+.input__Wrap textarea:focus-within {
+    border-color: #808080;
+}
+
+.input__Wrap input {
+    border-radius: 24px;
+    padding: 0.5rem 1rem;
+}
+
+.input__Wrap textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    resize: none;
+}
